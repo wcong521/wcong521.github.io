@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/wcong.github.io/static/css/main.c748635c.css",
+    "main.css": "/wcong.github.io/static/css/main.92664f64.css",
     "main.js": "/wcong.github.io/static/js/main.1f239a67.js",
     "index.html": "/wcong.github.io/index.html",
-    "main.c748635c.css.map": "/wcong.github.io/static/css/main.c748635c.css.map",
+    "main.92664f64.css.map": "/wcong.github.io/static/css/main.92664f64.css.map",
     "main.1f239a67.js.map": "/wcong.github.io/static/js/main.1f239a67.js.map"
   },
   "entrypoints": [
-    "static/css/main.c748635c.css",
+    "static/css/main.92664f64.css",
     "static/js/main.1f239a67.js"
   ]
 }
