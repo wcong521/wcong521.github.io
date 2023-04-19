@@ -1,0 +1,68 @@
+.Home {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    font-size: 72px;
+    font-weight: 400;
+    font-family: "Mrs Saint Delafield";
+    /* font-variant: small-caps; */
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.link {
+    font-size: 18px;
+    position: relative;
+    font-variant: small-caps;
+    font-family: "Source Sans Pro";
+    padding: 4px 0;
+    margin: 0 1px;
+    cursor: pointer;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+.link:hover::after,
+.link:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 4px, 0);
+}
+
+.link::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+  
+.link:hover::after,
+.link:focus::after{
+    transform: scale(1);
+  }
+  
+
