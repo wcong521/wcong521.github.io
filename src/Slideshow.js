@@ -37,7 +37,7 @@ function Slideshow(props) {
                 <motion.div
                     style={{
                         backgroundColor: content[slide].secondary,
-                        opacity: (index === slide) ? 1 : 0.2
+                        opacity: (index === slide) ? 1 : 0.15
                     }}
                     className="nav-item"
                     onClick={(e) => setSlide(index)}
@@ -46,7 +46,6 @@ function Slideshow(props) {
         }
         return (
             <div className="slide-info" style={{ color: content[slide].secondary }}>
-                <TbColumns3 className="carousel-icon" size={22} color={content[slide].secondary} onClick={() => props.setScreen({ component: 'carousel', type: props.type })} />
                 <div className="slide-info-name">{content[slide].name}</div>
                 <div className="slide-info-date">{content[slide].date}</div>
                 <div className="slide-nav">{nav}</div>
@@ -71,6 +70,7 @@ function Slideshow(props) {
                 transition={{ duration: .2 }}
             >
                 <div className="logo-small-left" style={{ color: content[slide].secondary }} onClick={() => props.setScreen({ component: 'home' })}>WC</div>
+                <TbColumns3 className="carousel-icon" size={22} color={content[slide].secondary} onClick={() => props.setScreen({ component: 'carousel', type: props.type })} />
                 {renderSlideInfo()}
                 <div className="slideshow" style={{ backgroundColor: content[slide].primary }}>
                     <motion.img

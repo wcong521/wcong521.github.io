@@ -48,7 +48,7 @@ const Content = {
             id: "e174b861-8468-4041-a7bf-712dc899ae75",
             primary: "white",
             secondary: "black",
-            scale: .85
+            scale: 1
         },
         {
             name: "figure i",
@@ -58,7 +58,7 @@ const Content = {
             id: "46fb47d3-c153-4877-acd3-31985cb50d44",
             primary: "black",
             secondary: "white",
-            scale: 1.03
+            scale: 1.02
         },
     ],
     music: [
@@ -74,16 +74,16 @@ const Content = {
             secondary: "white",
             scale: 1.15
         },
-        {
-            name: "grand canyon",
-            date: "4/16/2023",
-            preview: "./content/photography/grandcanyon2_preview.png",
-            full: "./content/photography/grandcanyon2_full.png",
-            id: "46fb47d3-c153-4877-acd3-31985cb50d44",
-            primary: "black",
-            secondary: "white",
-            scale: 1.15
-        },
+        // {
+        //     name: "grand canyon",
+        //     date: "4/16/2023",
+        //     preview: "./content/photography/grandcanyon2_preview.png",
+        //     full: "./content/photography/grandcanyon2_full.png",
+        //     id: "46fb47d3-c153-4877-acd3-31985cb50d44",
+        //     primary: "black",
+        //     secondary: "white",
+        //     scale: 1.15
+        // },
         {
             name: "antelope canyon",
             date: "4/16/2023",
@@ -122,7 +122,7 @@ const Content = {
             id: "46fb47d3-c153-4877-acd3-31985cb50d44",
             primary: "black",
             secondary: "white",
-            scale: .8
+            scale: 1
         },
         {
             name: "antelope canyon",
@@ -162,7 +162,7 @@ const Content = {
             id: "46fb47d3-c153-4877-acd3-31985cb50d44",
             primary: "black",
             secondary: "white",
-            scale: .7
+            scale: 1
         },
         {
             name: "antelope canyon",
@@ -172,7 +172,7 @@ const Content = {
             id: "46fb47d3-c153-4877-acd3-31985cb50d44",
             primary: "black",
             secondary: "white",
-            scale: .8
+            scale: 1
         },
         {
             name: "antelope canyon",
@@ -182,7 +182,7 @@ const Content = {
             id: "46fb47d3-c153-4877-acd3-31985cb50d44",
             primary: "black",
             secondary: "white",
-            scale: 1
+            scale: 1.2
         },
         {
             name: "antelope canyon",
@@ -192,7 +192,7 @@ const Content = {
             id: "46fb47d3-c153-4877-acd3-31985cb50d44",
             primary: "black",
             secondary: "white",
-            scale: .9
+            scale: 1
         },
         {
             name: "antelope canyon",
@@ -202,7 +202,7 @@ const Content = {
             id: "46fb47d3-c153-4877-acd3-31985cb50d44",
             primary: "black",
             secondary: "white",
-            scale: 1
+            scale: 1.2
         },
         {
             name: "antelope canyon",
@@ -212,7 +212,7 @@ const Content = {
             id: "46fb47d3-c153-4877-acd3-31985cb50d44",
             primary: "black",
             secondary: "white",
-            scale: .8
+            scale: 1
         },
         {
             name: "antelope canyon",
@@ -224,26 +224,26 @@ const Content = {
             secondary: "white",
             scale: 1
         },
-        {
-            name: "antelope canyon",
-            date: "4/16/2023",
-            preview: "./content/photography/antelope15_preview.png",
-            full: "./content/photography/antelope15_full.png",
-            id: "46fb47d3-c153-4877-acd3-31985cb50d44",
-            primary: "black",
-            secondary: "white",
-            scale: 1
-        },
-        {
-            name: "antelope canyon",
-            date: "4/16/2023",
-            preview: "./content/photography/antelope16_preview.png",
-            full: "./content/photography/antelope16_full.png",
-            id: "46fb47d3-c153-4877-acd3-31985cb50d44",
-            primary: "black",
-            secondary: "white",
-            scale: 1
-        },
+        // {
+        //     name: "antelope canyon",
+        //     date: "4/16/2023",
+        //     preview: "./content/photography/antelope15_preview.png",
+        //     full: "./content/photography/antelope15_full.png",
+        //     id: "46fb47d3-c153-4877-acd3-31985cb50d44",
+        //     primary: "black",
+        //     secondary: "white",
+        //     scale: 1
+        // },
+        // {
+        //     name: "antelope canyon",
+        //     date: "4/16/2023",
+        //     preview: "./content/photography/antelope16_preview.png",
+        //     full: "./content/photography/antelope16_full.png",
+        //     id: "46fb47d3-c153-4877-acd3-31985cb50d44",
+        //     primary: "black",
+        //     secondary: "white",
+        //     scale: 1
+        // },
         {
             name: "zion national park",
             date: "4/16/2023",
@@ -254,16 +254,16 @@ const Content = {
             secondary: "white",
             scale: 1.2
         },
-        {
-            name: "zion national park",
-            date: "4/16/2023",
-            preview: "./content/photography/zion2_preview.png",
-            full: "./content/photography/zion2_full.png",
-            id: "46fb47d3-c153-4877-acd3-31985cb50d44",
-            primary: "black",
-            secondary: "white",
-            scale: 1.15
-        },
+        // {
+        //     name: "zion national park",
+        //     date: "4/16/2023",
+        //     preview: "./content/photography/zion2_preview.png",
+        //     full: "./content/photography/zion2_full.png",
+        //     id: "46fb47d3-c153-4877-acd3-31985cb50d44",
+        //     primary: "black",
+        //     secondary: "white",
+        //     scale: 1.15
+        // },
         {
             name: "zion national park",
             date: "4/16/2023",

@@ -99,15 +99,17 @@
     will-change: transform;
 
     box-sizing: border-box;
+    /* border: 2px solid black; */
 
     
 
-    filter: saturate(0) brightness(0.2);
+    filter: saturate(0) brightness(.3);
     cursor: pointer;
     transition: filter 0.2s ease-in-out;
 }
 
 
 .item-image:hover {
-	filter: saturate(1) brightness(1.2);
+    /* border: 2px solid white; */
+	filter: saturate(1) brightness(1);
 }

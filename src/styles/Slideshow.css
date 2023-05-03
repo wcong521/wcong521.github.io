@@ -67,9 +67,12 @@
 
 
 .carousel-icon {
-    opacity: .15;
-    margin-bottom: 4px;
 
+    position: fixed;
+    right: 4vw;
+    bottom: 7vh;
+
+    opacity: 1;
     cursor: pointer;
     z-index: 1;
 
