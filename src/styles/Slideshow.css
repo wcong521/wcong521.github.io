@@ -11,8 +11,6 @@
     max-height: 100vh;
 }
 
-
-
 .slide-info {
     position: fixed;
     left: 2vw;
@@ -24,7 +22,7 @@
 }
 
 .slide-info-name {
-    font-weight: 600;
+    font-weight: 700;
     font-variant: small-caps;
     font-size: 20px;
 }
@@ -32,7 +30,8 @@
 .slide-info-date {
     font-weight: 400;
     font-variant: small-caps;
-    opacity: 0.5;
+    font-size: 14px;
+    opacity: 0.3;
 }
 
 .slide-nav {
@@ -52,8 +51,8 @@
 
 .logo-small-left {
     position: fixed;
-    top: 5vh;
-    left: 3vw;
+    bottom: 5vh;
+    right: 3.5vw;
 
     font-size: 24px;
     font-weight: 400;
@@ -65,22 +64,25 @@
     z-index: 1;
 }
 
-
-.carousel-icon {
-
+.slideshow-buttons {
     position: fixed;
-    right: 4vw;
-    bottom: 7vh;
+    left: 3vw;
+    top: 7vh;
+    display: flex;
+    gap: 24px;
+}
 
-    opacity: 1;
+.slideshow-button {
+
+    opacity: 0.25;
     cursor: pointer;
     z-index: 1;
 
-    transition: opacity 0.2s ease;
+    transition: opacity 0.1s ease;
 }
 
-.carousel-icon:hover {
-    opacity: 0.3;
+.slideshow-button:hover {
+    opacity: 1;
 }
 
 

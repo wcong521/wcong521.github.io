@@ -17,6 +17,9 @@ function Home(props) {
                 <div className="link" onClick={() => props.setScreen({ component: 'carousel', type: 'music' })}>
                     <span>music</span>
                 </div>
+                <div className="link" onClick={() => props.setScreen({ component: 'carousel', type: 'design' })}>
+                    <span>design</span>
+                </div>
                 <div className="link" onClick={() => props.setScreen({ component: 'carousel', type: 'photography' })}>
                     <span>photography</span>
                 </div>

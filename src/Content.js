@@ -275,6 +275,18 @@ const Content = {
             scale: 1.15
         },
     ],
+    design: [
+        {
+            name: "grand canyon",
+            date: "4/16/2023",
+            preview: "./content/photography/grandcanyon1_preview.png",
+            full: "./content/photography/grandcanyon1_full.png",
+            id: "46fb47d3-c153-4877-acd3-31985cb50d44",
+            primary: "black",
+            secondary: "white",
+            scale: 1.15
+        }
+    ]
 }
 
 export default Content;

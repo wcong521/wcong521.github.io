@@ -14,7 +14,7 @@
 }
 
 .logo {
-    font-size: 56px;
+    font-size: 64px;
     font-weight: 400;
     font-family: "Mrs Saint Delafield";
     /* font-variant: small-caps; */
@@ -27,10 +27,11 @@
 }
 
 .link {
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
     font-variant: small-caps;
     font-family: "Source Sans Pro";
+    font-weight: 700;
     padding: 4px 0;
     margin: 0 1px;
     cursor: pointer;

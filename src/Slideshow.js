@@ -4,10 +4,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import React, { useState, useEffect, useRef } from "react";
 import Content from "./Content.js"
 import { TbColumns3 } from 'react-icons/tb'
+import { BiExitFullscreen, BiDownload } from 'react-icons/bi'
 
 function Slideshow(props) {
     const [slide, setSlide] = useState(props.initial);
     const content = Content[props.type];
+    const downloadRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = (e) => {
@@ -17,6 +19,11 @@ function Slideshow(props) {
         window.addEventListener('wheel', handleScroll);
         return () => window.removeEventListener('wheel', handleScroll);
     }, [slide, content.length])
+
+    const handleClick = (e) => {
+        const widthPercent = (e.screenX / e.view.innerWidth) * 100;
+        paginate(widthPercent > 50 ? 1 : -1);
+    }
 
     const paginate = (direction) => {
         if (direction > 0) {
@@ -32,7 +39,6 @@ function Slideshow(props) {
     const renderSlideInfo = () => {
         const nav = []
         for (const [index, item] of content.entries()) {
-            console.log(item)
             nav.push(
                 <motion.div
                     style={{
@@ -40,7 +46,6 @@ function Slideshow(props) {
                         opacity: (index === slide) ? 1 : 0.15
                     }}
                     className="nav-item"
-                    onClick={(e) => setSlide(index)}
                 />
             )
         }
@@ -54,7 +59,6 @@ function Slideshow(props) {
     }
 
     const handleKeyUp = (e) => {
-        console.log(e.key)
         if (e.key === 'Escape') props.setScreen({ component: 'carousel', type: props.type })
     }
 
@@ -68,9 +72,24 @@ function Slideshow(props) {
                 animate={{ scale: 1 }}
                 exit={{ scale: 0.9 }}
                 transition={{ duration: .2 }}
+                onClick={handleClick}
             >
                 <div className="logo-small-left" style={{ color: content[slide].secondary }} onClick={() => props.setScreen({ component: 'home' })}>WC</div>
-                <TbColumns3 className="carousel-icon" size={22} color={content[slide].secondary} onClick={() => props.setScreen({ component: 'carousel', type: props.type })} />
+                <div className='slideshow-buttons'>
+                    <BiExitFullscreen 
+                        className="slideshow-button" 
+                        size={22} 
+                        color={content[slide].secondary} 
+                        onClick={() => props.setScreen({ component: 'carousel', type: props.type })}
+                    />
+                    <BiDownload 
+                        className="slideshow-button" 
+                        size={22} 
+                        color={content[slide].secondary} 
+                        onClick={() => downloadRef.current.click()}
+                    />
+                    <a href={content[slide].full} target="_blank" rel="noreferrer" ref={downloadRef}> </a>
+                </div>
                 {renderSlideInfo()}
                 <div className="slideshow" style={{ backgroundColor: content[slide].primary }}>
                     <motion.img
